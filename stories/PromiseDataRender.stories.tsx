@@ -65,8 +65,8 @@ export const CustomError = () => {
       isLoading={false}
       isError={true}
       data={'anything'}
-      error={new Error('💥 Custom Error!')}
-      errorComponent={(error) => <div>💥 Custom Error: {error}</div>}
+      error={new Error('💥 Error!')}
+      errorComponent={(error) => <div>Custom Error: {error.message}</div>}
     >
       {({ data }) => <div>{data}</div>}
     </PromiseDataRender>
